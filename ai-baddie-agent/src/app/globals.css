@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --background: #070314;
+  --foreground: #f7f5ff;
+  --accent: #f05aff;
+  --accent-soft: #ab9fff;
+  --muted: rgba(240, 90, 255, 0.18);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at 20% -10%, rgba(240, 90, 255, 0.3), transparent 45%),
+    radial-gradient(circle at 80% 0%, rgba(98, 102, 255, 0.28), transparent 52%),
+    #070314;
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(53, 31, 74, 0.35));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 40px rgba(19, 13, 33, 0.55);
+}
